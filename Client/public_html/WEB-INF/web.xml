@@ -7,8 +7,17 @@
     <servlet-class>departments.Main</servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
+  <servlet>
+    <servlet-name>EmpDaoPort</servlet-name>
+    <servlet-class>com.dao.EmpDao</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
   <servlet-mapping>
     <servlet-name>MainPort</servlet-name>
     <url-pattern>/MainPort</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EmpDaoPort</servlet-name>
+    <url-pattern>/EmpDaoPort</url-pattern>
   </servlet-mapping>
 </web-app>
